@@ -27,6 +27,7 @@ Funcionalidades:
 Cuando termina el simulador se le desbloqueará una div para que ingrese sus datos personales, un boton de acuerdo a los termnios de condiciones, y un boton para solicitar prestamo.
 - un simulador para empresas que tendra: un label tipo number para ingresar el monto a solicitar, un label con tipo number para la cantidad de cuotas (max 60), un boton para la funcion de calcular, y un parrafo que muestre los resultados. Tendra un valor minimo y maximo en la solicitud del prestamo, por lo cual dependera de lo que pida la empresa que rspuesta recibirá.
 
+
 Alfredo Puccini – Desarrollador Full Stack  
 GitHub: [PucciPucciDev](https://github.com/PucciPucciDev)
 

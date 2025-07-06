@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página</title>
-    
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">    
 </head>
 <body>
     
+    <!-- LOGIN -->
+
+    <div id="divPaginaLogin">
+
+        <h2>Bienvenido a 20 bucks</h2>
+
+        <fieldset>
+
+        <label for="txtUsuario">Iniciar Sesión</label><br>
+        <input type="text" id="txtUsuario" name="Nombre de Usuario"><br>
+
+        <label for="txtContraseña">Contraseña</label><br>
+        <input type="text" id="txtContraseña" name="Contraseña"><br><br>
+
+        <input type="button" value="Ingresar" id="btnIngresar">
+
+    </fieldset>
+
+    <p id="mensajeIniciarSesion"></p>
+
+    </div>
+
+
+    <!-- PÁGINA PRINCIPAL -->
+
+    <div id="divPaginaPrincipal">
+
+        <!--Navegador-->
+        <div id="divNavBar">
+            <div id="divLogo">20 Bucks S.A.</div>
+            <button id="btnLogout">Cerrar sesión</button>
+        </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <div id="divContPricipal">
+        <h3>Simulador de Crédito</h3>
+        <div id="divSimulador">
+            <!-- Simulador -->
+        </div>
+    </div>
+
+    <!-- PIE DE PAGINA -->
+
+    <div id="divFooter">
+        <div id="divFooterLinks">
+            <a href="0">Más información</a>
+            <a href="1">Ayuda</a>
+            <a href="2">Contacto</a>
+        </div>
+        <div id="divCR">
+            © 20 Bucks S.A. All Rights Reserved
+        </div>
+    </div>
+
+    </div>
+
 </body>
 </html>
