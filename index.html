@@ -13,15 +13,19 @@
 
     <div id="divPaginaLogin">
 
-        <h2>Bienvenido a 20 bucks</h2>
+        <h2>Bienvenido</h2>
+        <br>
+        <img src="img/20BucksLogo.png" alt="Logo 20bucks" id="logo20bucksLogin">
+        <br>
 
         <fieldset>
 
         <label for="txtUsuario">Nombre de Usuario</label><br>
-        <input type="text" id="txtUsuario" name="Nombre de Usuario"><br>
+        <input type="text" id="txtUsuario" name="Nombre de Usuario" placeholder="Documento"><br><br>
 
+        <!-- tambien esta la opcion de usar type="password" -->
         <label for="txtContraseña">Contraseña</label><br>
-        <input type="text" id="txtContraseña" name="Contraseña"><br><br>
+        <input type="password" id="txtContraseña" name="Contraseña" placeholder="Contraseña"><br><br>
 
         <input type="button" value="Ingresar" id="btnIngresar">
 
@@ -34,24 +38,69 @@
 
     <!-- PÁGINA PRINCIPAL -->
 
-    <div id="divPaginaPrincipal">
-
-        <!--Navegador-->
-        <div id="divNavBar">
-            <div id="divLogo">
-                <img src="img/20BucksLogo.png" alt="20 bucks" id="imgLogo">
-            </div>
-            <button id="btnLogout">Cerrar sesión</button>
-        </div>
-
-    <!-- CONTENIDO PRINCIPAL -->
-
-    <div id="divContPricipal">
-        <h3>Simulador de Crédito</h3>
-        <div id="divSimulador">
-            <!-- Simulador -->
-        </div>
+<!-- Página principal -->
+<div id="divPaginaPrincipal" style="display: none;">
+    <div id="divNavBar">
+        <img src="img/20BucksLogo.png" alt="Logo" />
+        <button id="btnLogout">Cerrar sesión</button>
     </div>
+
+    <h2>Simulador de Crédito</h2><br>
+
+    <div id="formPersonaFisica" style="display: none;">
+        <h3>Solicitud de Crédito - Persona Física</h3>
+        <form id="formFisica">
+    
+            <!-- Datos laborales -->
+            <fieldset>
+                <legend>Datos Laborales</legend>
+                <input type="text" id="ingresos" placeholder="Ingresos mensuales nominales" required><br>
+                <select id="antiguedad">
+                    <option value="-1">Menos de 1 año</option>
+                    <option value="1">1 año o más</option>
+                    <option value="2">2 años o más</option>
+                  </select><br>
+                <input type="text" id="empresa" placeholder="Nombre de la empresa" required><br>
+            </fieldset>
+    
+            <!-- Datos personales -->
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <input type="text" id="nombre" placeholder="Nombre y apellido" required><br>
+                <input type="date" id="fechaNacimiento" required><br>
+                <input type="text" id="cedula" placeholder="Cédula de identidad" required><br>
+                <select id="estadoCivil" required>
+                    <option value="">Estado civil</option>
+                    <option value="soltero">Soltero/a</option>
+                    <option value="casado">Casado/a</option>
+                    <option value="otro">Otro</option>
+                </select><br>
+                <input type="number" id="hijos" placeholder="Cantidad de hijos a cargo" min="0" required><br>
+            </fieldset>
+    
+            <!-- Crédito -->
+            <fieldset>
+                <legend>Crédito</legend>
+                <input type="number" id="monto" placeholder="Monto a solicitar" required><br>
+                <select id="cuotas">
+                    <option value="">Seleccione cantidad de cuotas</option>
+                    <option value="6">6</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="32">32</option>
+                    <option value="48">48</option>
+                </select><br>
+            </fieldset>
+    
+            <button type="button" id="btnCalcular">Calcular crédito</button>
+        </form>
+    
+        <div id="resultadoCredito"></div>
+    </div>
+
+</div>
 
     <!-- PIE DE PAGINA -->
 
