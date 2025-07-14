@@ -13,6 +13,21 @@ body{
     background: linear-gradient(135deg, #2b80d4, #e3f2fd);
 }
 
+/*Estilo de boton Cambiar*/
+
+#btnMagia {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+/*extra*/
+#btnMagia:hover{
+    background-color: #2b80d4;
+}
+
 /* -----LOGIN----- */
 
 #divPaginaLogin {

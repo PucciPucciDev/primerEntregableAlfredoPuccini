@@ -5,6 +5,7 @@ function inicio(){
     document.querySelector("#btnIngresar").addEventListener("click", iniciarSecion);
     document.querySelector("#btnLogout").addEventListener("click", cerrarSecion);
     document.querySelector("#btnCalcular").addEventListener("click", calcularCredito);
+    document.querySelector("#btnMagia").addEventListener("click", magia);
 }
 
 // Variable global usuraio logueado
@@ -124,4 +125,9 @@ function calcularCredito() {
     }
 
     document.querySelector("#resultadoCredito").innerHTML = mensaje;
+}
+
+// Ejercicio de la Letra
+function magia(){
+    document.querySelector("#pMagia").innerHTML= "¡Hola, Mundo con JavaScript!"
 }
