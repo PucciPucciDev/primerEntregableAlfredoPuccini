@@ -78,6 +78,10 @@ body{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+/*extra*/
+#btnIngresar:hover{
+    background-color: #2b80d4;
+}
 
 #mensajeIniciarSesion {
     color: red;
@@ -245,3 +249,49 @@ legend {
     margin-top: 0.5rem;
     color: #333;
 }
+
+
+/* Estilo Header NavBar */
+#divNavBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffdd;
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#divNavBar img {
+    height: 50px;
+}
+
+#btnLogout {
+    padding: 8px 16px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btnLogout:hover {
+    background-color: #c9302c;
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+

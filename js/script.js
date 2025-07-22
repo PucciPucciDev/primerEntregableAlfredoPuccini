@@ -45,7 +45,8 @@ function iniciarSecion() {
         // Mostrar página principal y ocultar login
         document.querySelector("#divPaginaLogin").style.display = "none";
         document.querySelector("#divPaginaPrincipal").style.display = "block";
-       // Mostrar formulario de persona física si corresponde
+        document.querySelector("#divEjercicio").style.display = "none";
+       // Mostrar formulario de persona física 
        if (usuarioLogueado.tipoPersona === "fisica") {
         document.querySelector("#formPersonaFisica").style.display = "block";
     } else {
@@ -73,10 +74,10 @@ function cerrarSecion() {
 // Funcion de Calcular Credito para Personas Fisicas
 
 function calcularCredito() {
-    let ingresos = +document.querySelector("#ingresos").value;
+    let ingresos = document.querySelector("#ingresos").value;
     let antiguedad = document.querySelector("#antiguedad").value;
-    let monto = +document.querySelector("#monto").value;
-    let cuotas = +document.querySelector("#cuotas").value;
+    let monto = document.querySelector("#monto").value;
+    let cuotas = document.querySelector("#cuotas").value;
     let mensaje = "";
 
     if (ingresos <= 0 || monto <= 0 || cuotas <= 0 || antiguedad === "") {
